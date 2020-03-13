@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+  <meta charset="UTF-8">
+  <title>写给羊</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+  <link href="css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+  <link href="css/body.css" rel="stylesheet">
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/core.js"></script>
+
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12	col-sm-12	col-md-12	col-lg-12">
+      <h1>
+        <div id="typewriter"></div>
+      </h1>
+    </div>
+    <div class="col-xs-12	col-sm-12	col-md-12	col-lg-12">
+      <h1>
+        <div id="clock_show" style="text-align: center;"></div>
+      </h1>
+    </div>
+  </div>
+</div>
+<script type='text/javascript'>
+    var scroll = setInterval(function () {
+        window.scrollTo(0, document.body.scrollHeight)
+    }, 100);
+    // hljs.configure({useBR: true});
+    //
+    // document.querySelectorAll('div').forEach((block) => {
+    //   hljs.highlightBlock(block);
+    // });
+
+    const typewriter = new Typewriter('#typewriter', {
+        loop: false
+    });
+    typewriter
+        .typeString('我是一只鹅')
+        .pauseFor(500)
+        .deleteChars(1)
+        .typeString('<b>程序员</b>')
+        .pauseFor(2000)
+        .typeString('<br/>')
+        .typeString('我不会太会说小情话')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('有时候还喜欢和妳抬杠')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('但我有一颗爱妳的❤')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('<br/>')
+        .typeString('第一眼看见妳')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('就喜欢上了妳')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('妳拿起道具匕首')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('像丘比特的箭射向我心')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('<br/>')
+        .typeString('和妳在一起')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('有好笑的综艺好吃的零食')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('和好看的妳')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('<br/>')
+        .typeString('然而初心易得')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('始终难守')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('喜欢一个人很容易')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('爱一个人很难')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('<br/>')
+        .typeString('但妳告诉我')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('世界不是非黑即白')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('灰色才是人间的温度')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('妳说要和世界据理力争')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('我说要和世界握手言和')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('<br/>')
+        .typeString('妳之于我')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('不仅仅是喜欢')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('更教会我什么是爱')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('无条件完全包容')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('无条件对一个人好')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('是我想要的第五境界')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('<br/>')
+        .typeString('那些终将过下去的日子')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('叫做余生')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('而余生有妳')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('才叫未来')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('<br/>')
+        .typeString('多想每天早上都有妳')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('而不是照片中的妳')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('多想跨过手机去抱妳')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('而不是抱着手机去想妳')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('情话千篇')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('不如妳在身边')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('<br/>')
+        .typeString('羊')
+        .pauseFor(1000)
+        .typeString('<br/>')
+        .typeString('我好想妳')
+        .pauseFor(1000)
+        .start()
+        .callFunction(f);
+
+    function f() {
+        document.getElementById("typewriter").innerHTML = "";
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 1, 2019 12:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = now - countDownDate;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("clock_show").innerHTML = "羊，我们在一起了<br/>" + days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+        }, 1000);
+    }
+</script>
+</body>
+</html>
